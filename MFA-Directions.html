@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<title>MFA Directions</title>
+	<style>
+		html,body{
+			width: 100%;
+			height: 100%;
+		}
+		
+		* {
+			box-sizing:border-box
+		}
+
+		/* Slideshow container */
+		.slideshow-container {
+			max-width: 100%;
+			height: 97%;
+			position: relative;
+			margin: auto;
+			padding-top: 15px;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+			display: block;
+			height: 100%; 
+			background-color:rgba(245, 245, 255, .25);
+			border: thin white solid;
+			box-shadow: 0px 0px 10px rgba(255,255,255,.75);
+			
+		}
+
+		/* Next & previous buttons */
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  margin-top: -22px;
+		  padding: 16px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+			color: #f2f2f2;
+			font-size: 24px;
+			padding: 8px 12px;
+			/*position: absolute;*/
+			bottom: 8px;
+			width: 100%;
+		  	text-align: center;
+			text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 24px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 10;
+			text-shadow: 0px 0px 10px rgba(255,255,255,.5);
+			/*text-decoration-line: underline;*/
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		  cursor: pointer;
+		  height: 15px;
+		  width: 15px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+		  background-color: #717171;
+		}
+
+		.holoimage{
+			opacity: 100%;
+			border: border: thin white solid;
+			box-shadow: 0px 0px 10px rgba(255,255,255,.75);
+			max-width: 100%; 
+			max-height: 550px;
+			align-self: center;
+		}
+		
+		
+	</style>
+	<script>
+		
+	
+		$(document).ready(function(){
+			$(".prev").click(function(){
+			 	$(".next").show();
+		  });
+		});
+		
+		$(document).ready(function(){
+			$(".next").click(function(){
+				/*$(this).hide();
+				$(this).delay(10000);
+			 	$(this).fadeIn(5000);*/
+		  });
+		});
+		
+	</script>
+</head>
+
+<body style="background-image: url('https://rescue.box.com/shared/static/895uej39tkmkc2uhk7qtp1csgg4ib4km.png'); background-size: cover;">
+	<div class="container-fluid" style="height: 100%; width: 100%; background-color: rgba(0,15,32,0.92);">
+			<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		  <!-- Full-width images with number and caption text -->
+			<div class="mySlides" id="slide00">
+			<div class="row" style="background-color: blue;">
+				<div class="col">
+					<!--<div class="numbertext">0 / 7</div>-->
+				</div>
+			</div>
+			<div class="row" style="padding: 20px;"></div>
+			<div class="text"><p style="line-height: 0px;"><strong>Sign Up for</strong></p><h1 style="font-size: 72px; line-height: 72px;">Multi Factor Authentication</h1><p style="line-height: 20px;"><strong>In 7 Easy Steps</strong></p></div>
+			<div class="row" style="padding: 10px;">
+				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><img class="holoimage" src="https://rescue.box.com/shared/static/x3ok4k4sz3o61g8s77lzsvthwdquzwev.png" alt="MSA-iOS-Download" style="max-width: 95%; max-height: 350px; border-radius: 50px;"></div>	
+			</div>
+			<div class="row" style="padding: 10px;">
+				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><div class="text"><p><strong>This process will take 2 minutes</strong> <br> Click the <strong>&#10095;</strong> button proceed <i>(it will appear every 10 seconds)</i><br> Click the <strong>&#10094;</strong> button to go back</p></div>	</div>	
+			</div>
+				
+			</div>
+			<div class="mySlides">
+			<div class="row" style="background-color: blue;">
+				<div class="col">
+					<div class="numbertext">1 / 7 - Download the Microsoft Authenticator App</div>
+				</div>
+			</div>
+			<div class="row" style="padding: 20px;"></div>
+			<div class="text">From your <strong>Android or iOS device</strong>, go to the <strong>Google Play or Apple App Store</strong> and download <strong>Microsoft Authenticator</strong>.</div>
+			<div class="row" style="padding: 10px;">
+				<div class="col-sm-6" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/5r4brzq07gek60ij8q3psf1p52no5anu.png" alt="MSA-iOS-Download"></div>
+				<div class="col" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/2qdyk5iofwma5fmiita66qtqo71s1ad6.png" alt="MSA-iOS-Download"></div>
+			</div>
+			
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">2 / 7 - Initiate MFA Sign Up</div>
+				<div class="row" style="padding: 20px;"></div>
+				<div class="text">Go to your computer and visit <strong>rescuenet.rescue.org/i/mfa</strong>.<br>Click the <strong>Setup Azure MFA</strong> button and sign into your rescue.org or rescue-uk.org account.</div>
+			<div class="row" style="padding: 10px;" >
+				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><img class="holoimage" src="https://rescue.box.com/shared/static/iq1rbswosst63ipoxymrfr8ihya3xfel.png" alt="MSA-iOS-Download" ></div>
+			</div>
+				
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">3 / 7 - Obtaining Verification Code</div>
+				<div class="row" style="padding: 20px;"></div>
+				<div class="text">On the <strong>Additional security verification</strong> page, select <strong>Mobile app</strong> from the <strong>How should we contact you?</strong> dropdown<br>Then toggle the <strong>Use verification code</strong> option. Click Set up to proceed.</div>
+			<div class="row" style="padding: 10px;">
+				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><img class="holoimage" src="https://rescue.box.com/shared/static/vszqsj1iflhu1yp4vgfh52jtg7bicmqg.png" alt="MSA-iOS-Download" ></div>
+			</div>		
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">4 / 7 - Creating an Azure MFA Account</div>
+				<div class="row" style="padding: 20px;"></div>
+				<div class="text">The <strong>Configure mobile app</strong> page will appear<br>From your <strong>Android or iOS device</strong>, launch the <strong>Microsoft Authenticator</strong> app, tap <strong>add Account</strong>, and then tap <strong>Work or School account</strong>.</div>
+			<div class="row" style="padding: 10px;">
+				<div class="col-sm-6" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/hs1uulqkamj9klstaoy0ec2p42gnac89.png" alt="MSA-iOS-Download"></div>
+				<div class="col" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/6zusj9klcn3u2n38u2ldnvokz642c3ec.png" alt="MSA-iOS-Download">
+				</div>
+			</div>
+				
+			
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">5 / 7 - Viewing One-Time Password </div>
+				<div class="row" style="padding: 20px;"></div>
+				<div class="text">Use your <strong>device's camera</strong> to scan the <strong>QR code</strong> from the Configure mobile app page on your computer. <br>Then tap your <strong>International Rescue Committee</strong> account to view the six-digit, one-time password (generated every 30 seconds).</div>
+			<div class="row" style="padding: 10px;">
+				<div class="col-sm-6" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/hs1uulqkamj9klstaoy0ec2p42gnac89.png" alt="MSA-iOS-Download"></div>
+				<div class="col" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/61an8xvmfe2sl0b4zjwno9n9pnorm13h.png" alt="MSA-iOS-Download">
+				</div>
+			</div>
+
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">6 / 7 - Entering One-Time Password </div>
+				<div class="row" style="padding: 20px;"></div>
+				<div class="text">From your computer, <strong>enter the six-digit code</strong> from the app into the <strong>Enter the verification code</strong> from the mobile app. <br> Then click <strong>Verify</strong>.</div>
+			<div class="row" style="padding: 10px;">
+				<div class="col" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/8f48flbpjpfp9vw79y9psi89bg824t7e.png" alt="MSA-iOS-Download">
+				</div>
+				<div class="col-sm-6" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/rp5c1u2a5qsx8prnmysp6t9f8fn1fqxz.png" alt="MSA-iOS-Download"></div>
+			</div>
+			
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">7 / 7 - Adding Phone Number </div>
+				<div class="row" style="padding: 20px;"></div>
+				<div class="text">Finally, <strong>Add your mobile device phone number</strong> to the In case you lose access to the mobile app area, and then select <strong>Done</strong>.</div>
+			<div class="row" style="padding: 10px;">
+				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><img class="holoimage" src="https://rescue.box.com/shared/static/t7pflftwkkxl9g6cqiusckw6h5a9zr9d.png" alt="MSA-iOS-Download" style="max-width: 95%; max-height: 600px; align-self: center"></div>
+			</div>
+			
+			</div>
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)" >&#10095;</a>
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<!--<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>-->
+	</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+	
+	// Next/previous controls
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	// Thumbnail image controls
+	function currentSlide(n) {
+	  	showSlides(slideIndex = n);
+	}
+
+
+	function showSlides(n) {
+	  	let i;
+	  	let slides = document.getElementsByClassName("mySlides");
+	  	let dots = document.getElementsByClassName("dot");
+	
+	
+	  	if (n > slides.length) {
+			slideIndex = 1;
+			
+		}
+	  	if (n < 1) {
+			slideIndex = slides.length
+		  	
+	  	}
+		
+	  	for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+	  	slides[slideIndex-1].style.display = "block";
+	  	dots[slideIndex-1].className += " active";
+		
+	}
+	
+</script>
+</body>
+</html>
