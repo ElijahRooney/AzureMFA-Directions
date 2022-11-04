@@ -106,7 +106,7 @@
 			border: border: thin white solid;
 			box-shadow: 0px 0px 10px rgba(255,255,255,.75);
 			max-width: 100%; 
-			max-height: 550px;
+			max-height: 450px;
 			align-self: center;
 		}
 		
@@ -114,7 +114,11 @@
 	</style>
 	<script>
 		
-	
+		$(document).ready(function(){
+			$("#slide01").show(function(){
+			 	$(".prev").show();
+		  });
+		});
 		$(document).ready(function(){
 			$(".prev").click(function(){
 			 	$(".next").show();
@@ -123,9 +127,10 @@
 		
 		$(document).ready(function(){
 			$(".next").click(function(){
-				/*$(this).hide();
+				$(this).hide();
 				$(this).delay(10000);
-			 	$(this).fadeIn(5000);*/
+				$(this).hide();
+			 	$(this).fadeIn(5000);
 		  });
 		});
 		
@@ -147,7 +152,7 @@
 			<div class="row" style="padding: 20px;"></div>
 			<div class="text"><p style="line-height: 0px;"><strong>Sign Up for</strong></p><h1 style="font-size: 72px; line-height: 72px;">Multi Factor Authentication</h1><p style="line-height: 20px;"><strong>In 7 Easy Steps</strong></p></div>
 			<div class="row" style="padding: 10px;">
-				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><img class="holoimage" src="https://rescue.box.com/shared/static/x3ok4k4sz3o61g8s77lzsvthwdquzwev.png" alt="MSA-iOS-Download" style="max-width: 95%; max-height: 350px; border-radius: 50px;"></div>	
+				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><img class="holoimage" src="https://rescue.box.com/shared/static/x3ok4k4sz3o61g8s77lzsvthwdquzwev.png" alt="MSA-iOS-Download" style="max-width: 95%; max-height: 300px; border-radius: 50px;"></div>	
 			</div>
 			<div class="row" style="padding: 10px;">
 				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><div class="text"><p><strong>This process will take 2 minutes</strong> <br> Click the <strong>&#10095;</strong> button proceed <i>(it will appear every 10 seconds)</i><br> Click the <strong>&#10094;</strong> button to go back</p></div>	</div>	
@@ -155,7 +160,7 @@
 				
 			</div>
 			<div class="mySlides">
-			<div class="row" style="background-color: blue;">
+			<div class="row">
 				<div class="col">
 					<div class="numbertext">1 / 7 - Download the Microsoft Authenticator App</div>
 				</div>
@@ -166,7 +171,7 @@
 				<div class="col-sm-6" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/5r4brzq07gek60ij8q3psf1p52no5anu.png" alt="MSA-iOS-Download"></div>
 				<div class="col" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/2qdyk5iofwma5fmiita66qtqo71s1ad6.png" alt="MSA-iOS-Download"></div>
 			</div>
-			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			</div>
 			<div class="mySlides">
 				<div class="numbertext">2 / 7 - Initiate MFA Sign Up</div>
@@ -175,7 +180,7 @@
 			<div class="row" style="padding: 10px;" >
 				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><img class="holoimage" src="https://rescue.box.com/shared/static/iq1rbswosst63ipoxymrfr8ihya3xfel.png" alt="MSA-iOS-Download" ></div>
 			</div>
-				
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>	
 			</div>
 			<div class="mySlides">
 				<div class="numbertext">3 / 7 - Obtaining Verification Code</div>
@@ -183,7 +188,8 @@
 				<div class="text">On the <strong>Additional security verification</strong> page, select <strong>Mobile app</strong> from the <strong>How should we contact you?</strong> dropdown<br>Then toggle the <strong>Use verification code</strong> option. Click Set up to proceed.</div>
 			<div class="row" style="padding: 10px;">
 				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><img class="holoimage" src="https://rescue.box.com/shared/static/vszqsj1iflhu1yp4vgfh52jtg7bicmqg.png" alt="MSA-iOS-Download" ></div>
-			</div>		
+			</div>	
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			</div>
 			<div class="mySlides">
 				<div class="numbertext">4 / 7 - Creating an Azure MFA Account</div>
@@ -194,8 +200,7 @@
 				<div class="col" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/6zusj9klcn3u2n38u2ldnvokz642c3ec.png" alt="MSA-iOS-Download">
 				</div>
 			</div>
-				
-			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>	
 			</div>
 			<div class="mySlides">
 				<div class="numbertext">5 / 7 - Viewing One-Time Password </div>
@@ -206,7 +211,7 @@
 				<div class="col" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/61an8xvmfe2sl0b4zjwno9n9pnorm13h.png" alt="MSA-iOS-Download">
 				</div>
 			</div>
-
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			</div>
 			<div class="mySlides">
 				<div class="numbertext">6 / 7 - Entering One-Time Password </div>
@@ -217,7 +222,7 @@
 				</div>
 				<div class="col-sm-6" style="display: flex; flex-direction: row; justify-content: center;"><img class="holoimage" src="https://rescue.box.com/shared/static/rp5c1u2a5qsx8prnmysp6t9f8fn1fqxz.png" alt="MSA-iOS-Download"></div>
 			</div>
-			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			</div>
 			<div class="mySlides">
 				<div class="numbertext">7 / 7 - Adding Phone Number </div>
@@ -226,10 +231,10 @@
 			<div class="row" style="padding: 10px;">
 				<div class="col-sm-12" style="display: flex; flex-direction: row; justify-content: center;" ><img class="holoimage" src="https://rescue.box.com/shared/static/t7pflftwkkxl9g6cqiusckw6h5a9zr9d.png" alt="MSA-iOS-Download" style="max-width: 95%; max-height: 600px; align-self: center"></div>
 			</div>
-			
-			</div>
-			<!-- Next and previous buttons -->
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			</div>
+			<!-- Next button -->
+			
 			<a class="next" onclick="plusSlides(1)" >&#10095;</a>
 		</div>
 		<br>
